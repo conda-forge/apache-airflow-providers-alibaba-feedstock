@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-alibaba" %}
-{% set version = "1.1.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-alibaba-{{ version }}.tar.gz
-  sha256: 2407c1099ce49401084bf361068ebe7bf3ad9fde6e013f3e2a6fccb326c9d424
+  sha256: 4dc5a366a8e0a39fa027ec46fa861b20659034e252d1b6b4f7dd7296a8240374
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
+    - apache-airflow >=2.2.0
     - oss2 >=2.14.0
 
 test:
@@ -37,7 +37,7 @@ about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-alibaba package
   license: Apache-2.0
-  license_file: 
+  license_file:
     - LICENSE
     - NOTICE
   license_family: Apache

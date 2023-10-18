@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - alibabacloud-adb20211201 >=1.0.0
     - alibabacloud-tea-openapi >=0.3.7
-    - apache-airflow >=2.4.0
+    - apache-airflow >=2.5.0
     - oss2 >=2.14.0
 
 test:

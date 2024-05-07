@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-alibaba" %}
-{% set version = "2.7.3" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_alibaba-{{ version }}.tar.gz
-  sha256: c8fb95feadbe3b92505fcad1e9a304715178b47f26fbce08303c8b36d0d8c140
+  sha256: c059c1444c57cf368c414b941fe85188b7b93bf4cdb4fe34fbc4fb532648700a
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - alibabacloud-adb20211201 >=1.0.0
     - alibabacloud-tea-openapi >=0.3.7
-    - apache-airflow >=2.6.0
+    - apache-airflow >=2.7.0
     - oss2 >=2.14.0
 
 test:

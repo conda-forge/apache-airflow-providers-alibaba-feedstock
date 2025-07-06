@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-alibaba" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_alibaba-{{ version }}.tar.gz
-  sha256: c1382074e3f09f308cf01e53f8a4e9b423729ef3eb058f85e8a0a688979771a7
+  sha256: cec0929cdcd55ab2a0cd6cf5af26985252795030357de0c42e34498f35305f46
 
 build:
   noarch: python
@@ -20,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - pyodps >=0.12.2.2
     - python >={{ python_min }},<4.dev0
     - apache-airflow >=2.10.0
     - oss2 >=2.14.0

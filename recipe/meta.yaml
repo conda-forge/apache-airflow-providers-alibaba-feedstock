@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - pyodps >=0.12.2.2
-    - python >={{ python_min }},<4.dev0
+    - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - oss2 >=2.14.0
     - alibabacloud-adb20211201 >=1.0.0

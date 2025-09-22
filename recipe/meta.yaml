@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-alibaba" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_alibaba-{{ version }}.tar.gz
-  sha256: e4fe4320022e5dbb5c5c16fab28588f32d48a9ed1fa88e016c3d8422217a451c
+  sha256: 5db7a92b0ee3c31f4c1b610a61b75ca01fbb9e0c200b7b94ab53036fd1544db5
 
 build:
   noarch: python

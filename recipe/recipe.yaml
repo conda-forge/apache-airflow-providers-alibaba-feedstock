@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-alibaba
-  version: "3.3.1"
+  version: "3.3.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_alibaba-${{ version }}.tar.gz
-  sha256: 9f8294cad98fc82aba2c903799d98907919133ef6f6d6ad6a6040a804ef5dd38
+  sha256: 0d4c5613e3e28cd803ec4dc388e3f2b83df58b3ff2ae994247850a3b1237c22c
 
 build:
   noarch: python

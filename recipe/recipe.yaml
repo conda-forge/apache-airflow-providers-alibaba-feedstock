@@ -28,6 +28,7 @@ requirements:
     - alibabacloud-adb20211201 >=1.0.0
     - alibabacloud-tea-openapi >=0.3.7
     - pyodps >=0.12.2.2
+
 tests:
   - python:
       imports:

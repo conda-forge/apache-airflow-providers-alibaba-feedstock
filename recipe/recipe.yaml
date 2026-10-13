@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-alibaba
-  version: 3.5.0
+  version: 3.5.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_alibaba-${{ version }}.tar.gz
-  sha256: 164c370dc0fb0d75bf95e1d81183986416cd4fd70ce579d8bc9f705d951d3043
+  sha256: 4c4f6d068150f7de29289a75ba40dd3c980146ff74520b74b2741f1e1cd2a5ce
 
 build:
   noarch: python
@@ -27,8 +27,7 @@ requirements:
     - alibabacloud-oss-v2 >=1.2.0
     - alibabacloud-adb20211201 >=1.0.0
     - alibabacloud-tea-openapi >=0.3.7
-    # tightest of upstream's floors (python >=3.13)
-    - pyodps >=0.12.5.1
+    - pyodps >=0.12.2.2
 tests:
   - python:
       imports:

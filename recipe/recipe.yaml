@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-alibaba
-  version: "3.5.2"
+  version: "4.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_alibaba-${{ version }}.tar.gz
-  sha256: 26cd7f9f703a8ea9648062a92744907eb01907a660294963c2af4091c6f0bf97
+  sha256: 498d39f81a65a946351573d51c07e0c48d0b462ebae17aea1254bca054e9c895
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.1.0
+    - flit-core ==4.2.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
